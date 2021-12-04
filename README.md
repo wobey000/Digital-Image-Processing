@@ -1,5 +1,6 @@
 # Digital-Image-Processing
 Image Processing Library created in C++
+
 Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™  
 
 ## Task List 
