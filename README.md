@@ -28,7 +28,7 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 - [ ] Detecting Edges with the Kirsch Mask
 - [ ] Detecting Edges with the Laplacian Mask
 - [ ] Detecting Edges with the Robert's Mask
-### Neighnorhood Processing
+### Neighborhood Processing
 - [ ] Developing the 2-D Discrete Convolution Algorihtm
 ### Filter Algorihtms
 - [ ] Adding Salt and Pepper Noise to an image 
