@@ -12,7 +12,7 @@ void imageWriter(const char* imgName, unsigned char* header, unsigned char* colo
 int main(int argc, char const *argv[])
 {
     std::cout << "Hello World Image Processing " << std::endl;
-    std::cout << "Funtion Tests" << std::endl;   
+    std::cout << "Function Tests" << std::endl;   
 
     int imgWidth;
     int imgHeight;
