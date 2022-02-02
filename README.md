@@ -2,8 +2,6 @@ Image Processing Library created in C++
 
 Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™  
 
-Test for WSL 
-
 ## Task List 
 ### Basic Setup/Stuff
 - [x] Open and Copy Image 
