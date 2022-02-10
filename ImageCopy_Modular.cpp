@@ -21,8 +21,8 @@ int main(int argc, char const *argv[])
     unsigned char imgColorTable[BMP_COLOR_TABLE_SIZE];
     unsigned char imgBuffer[CUSTOM_IMG_SIZE]; 
 
-    const char imgName[] = "images/man.bmp"; 
-    const char newImgName[] = "images/man_copy.bmp"; 
+    const char imgName[] = "man.bmp"; 
+    const char newImgName[] = "man_copy.bmp"; 
 
     imageReader(imgName, &imgHeight, &imgWidth, &imgBitDepth, imgHeader, imgColorTable, &imgBuffer[0]);
     imageWriter(newImgName, imgHeader, imgColorTable, imgBuffer, imgBitDepth); 

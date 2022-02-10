@@ -4,8 +4,8 @@ int main(int argc, char const *argv[])
 {
     std::cout << "Hello World Image Processing \n" << std::endl; 
 
-    FILE *streamIn = fopen("images/cameraman.bmp", "rb"); // input: read and store into stream 
-    FILE *fileOut = fopen("images/cameraman_my_copy_one.bmp", "wb"); // output: write to file 
+    FILE *streamIn = fopen("cameraman.bmp", "rb"); // input: read and store into stream 
+    FILE *fileOut = fopen("cameraman_my_copy_one.bmp", "wb"); // output: write to file 
 
     // error checking 
     if(streamIn == (FILE*)0)
