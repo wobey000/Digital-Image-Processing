@@ -8,7 +8,7 @@ Test
 ### Basic Setup/Stuff
 - [x] Open and Copy Image 
 - [x] ImageReader and ImageWritter Functions 
-- [ ] Image Processing Library Creation
+- [x] Image Processing Library Creation
 ### Arithmetic Operations
 - [ ] Increasing Image Brightness
 - [ ] Reducing Image Brightness
