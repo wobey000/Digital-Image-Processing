@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-ImageProcessing::ImageProcessing(const char* _inImgName, const char* _outImgName, int* _height, int* _width, int* _bitDepth, unsigned char*  _header, unsigned char* _colorTable, unsigned char* _inBuf, unsigned char* _outBuf)
+ImageProcessing::ImageProcessing(const char* _inImgName, const char* _outImgName, int* _height, int* _width, int* _bitDepth, unsigned char*  _header, unsigned char* _colorTable, unsigned char* _inBuf, unsigned char* outBuf)
 {
     // Constructor
     inImgName = _inImgName; 
@@ -14,7 +14,7 @@ ImageProcessing::ImageProcessing(const char* _inImgName, const char* _outImgName
     bitDepth = _bitDepth; 
     header = _header; colorTable = _colorTable; 
     inBuf = _inBuf; 
-    outBuf = _outBuf;
+    _outBuf = outBuf;
 
 }
 
@@ -24,10 +24,10 @@ void ImageProcessing::readImage()
     FILE* streamIn; 
     streamIn = fopen(inImgName, "rb");
     if(streamIn == (FILE *)0)
-    [
+    {
         std::cout << "Unable to open file. Maybe file doesn't exist buddy?" << std::endl; 
         exit(0); 
-    ]
+    }
 
     for(i = 0; i < BMP_HEADER_SIZE; i++)
     {
@@ -67,7 +67,7 @@ void ImageProcessing::writeImage()
         fwrite(colorTable, sizeof(unsigned char), BMP_COLOR_TABLE_SIZE, fo); 
     }
 
-    fwrite(outBuf, sizeof(unsigned char), _512by512_IMG_SIZE, fo); 
+    fwrite(_outBuf, sizeof(unsigned char), _512by512_IMG_SIZE, fo); 
     fclose(fo); 
 }
 

@@ -9,22 +9,9 @@ class ImageProcessing
 {
     public:
     // constructor 
-    ImageProcessing(const char* _inImgName, const char* _outImgName, int* _height, int* _width, int* _bitDepth, unsigned char*  _header, unsigned char* _colorTable, unsigned char* _inBuf, unsigned char* _outBuf)
-    {
-        // Constructor
-        inImgName = _inImgName; 
-        outimgName = _outImgName; 
-        height = _height; 
-        width = _width; 
-        bitDepth = _bitDepth; 
-        header = _header; colorTable = _colorTable; 
-        inBuf = _inBuf; 
-        outBuf = _outBuf;
-
-    }
-
+    ImageProcessing(const char* _inImgName, const char* _outImgName, int* _height, int* _width, int* _bitDepth, unsigned char*  _header, unsigned char* _colorTable, unsigned char* _inBuf, unsigned char* _outBuf);
     void readImage();
-    void readImage();
+    void writeImage();
     void copyImage(unsigned char* _srcBuf, unsigned char* _desBuf, int bufSize); 
 
     virtual ~ImageProcessing(); // destructor -- virtual to avoid undefined behavior when deleting derived classes 
