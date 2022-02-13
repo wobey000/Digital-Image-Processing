@@ -18,6 +18,11 @@ ImageProcessing::ImageProcessing(const char* _inImgName, const char* _outImgName
 
 }
 
+ImageProcessing::~ImageProcessing()
+{
+    // Destructor
+}
+
 void ImageProcessing::readImage()
 {
     int i;
@@ -80,9 +85,26 @@ void ImageProcessing::copyImage(unsigned char* _srcBuf, unsigned char* _desBuf, 
     }
 }
 
-
-
-ImageProcessing::~ImageProcessing()
+void ImageProcessing::BrightnessUp(unsigned char* _inputImgData, unsigned char* _outImgData, int imgSize, int brightness)
 {
-    // Destructor
+    for(int i = 0; i < imgSize; i++)
+    {
+        int temp = _inputImgData[i] + brightness;
+
+        // truncation (0-255) check 
+        // remember to do the normalization equation for a more sophisticated implementation
+        _outImgData[i] = (temp > MAX_COLOR) ? MAX_COLOR : temp; 
+    }
+}
+
+void ImageProcessing::BrightnessDown(unsigned char* _inputImgData, unsigned char* _outImgData, int imgSize, int brightness)
+{
+    for(int i = 0; i < imgSize; i++)
+    {
+        int temp = _inputImgData[i] - brightness;
+
+        // truncation (0-255) check 
+        // remember to do the normalization equation for a more sophisticated implementation
+        _outImgData[i] = (temp < MIN_COLOR) ? MIN_COLOR : temp; 
+    }
 }

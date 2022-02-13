@@ -4,17 +4,25 @@
 static const int _512by512_IMG_SIZE = 262144; // image size 512*512
 static const int BMP_COLOR_TABLE_SIZE = 1024; 
 static const int BMP_HEADER_SIZE = 54; 
+static const int MAX_COLOR = 255; 
+static const int MIN_COLOR = 0;
+static const int WHITE = MAX_COLOR; 
+static const int BLACK = MIN_COLOR; 
 
 class ImageProcessing
 {
     public:
     // constructor 
-    ImageProcessing(const char* _inImgName, const char* _outImgName, int* _height, int* _width, int* _bitDepth, unsigned char*  _header, unsigned char* _colorTable, unsigned char* _inBuf, unsigned char* _outBuf);
+    ImageProcessing(const char* _inImgName, const char* _outImgName, int* _height, int* _width, int* _bitDepth, unsigned char*  _header, unsigned char* _colorTable, unsigned char* _inBuf, unsigned char* outBuf);
+    virtual ~ImageProcessing(); // destructor -- virtual to avoid undefined behavior when deleting derived classes
+    
     void readImage();
     void writeImage();
     void copyImage(unsigned char* _srcBuf, unsigned char* _desBuf, int bufSize); 
+    void BrightnessUp(unsigned char* _inputImgData, unsigned char* _outImgData, int imgSize, int brightness);
+    void BrightnessDown(unsigned char* _inputImgData, unsigned char* _outImgData, int imgSize, int brightness);
 
-    virtual ~ImageProcessing(); // destructor -- virtual to avoid undefined behavior when deleting derived classes 
+     
 
     protected: 
 

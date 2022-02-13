@@ -17,7 +17,9 @@ int main()
 
     ImageProcessing* myImage = new ImageProcessing(imgName, newImgName, &imgHeight, &imgWidth, &imgBitDepth, &imgHeader[0], &imgColorTable[0], &imgInBuffer[0], &imgOutBuffer[0]);
     myImage->readImage();
-    myImage->copyImage(imgInBuffer, imgOutBuffer, _512by512_IMG_SIZE); 
+    //myImage->copyImage(imgInBuffer, imgOutBuffer, _512by512_IMG_SIZE); 
+    //myImage->BrightnessUp(imgInBuffer, imgOutBuffer, _512by512_IMG_SIZE, 100);
+    myImage->BrightnessDown(imgInBuffer, imgOutBuffer, _512by512_IMG_SIZE, 200);
     myImage->writeImage(); 
 
     std::cout << "Good Job buddy :) " << std::endl; 
