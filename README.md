@@ -10,8 +10,8 @@ Test
 - [x] ImageReader and ImageWritter Functions 
 - [x] Image Processing Library Creation
 ### Arithmetic Operations
-- [ ] Increasing Image Brightness
-- [ ] Reducing Image Brightness
+- [x] Increasing Image Brightness
+- [x] Reducing Image Brightness
 ### Histogram and Equalization
 - [ ] Computing Histogram of an Image
 - [ ] Equalizing an Image Histogram
