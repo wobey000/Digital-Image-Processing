@@ -13,7 +13,7 @@ Test
 - [x] Increasing Image Brightness
 - [x] Reducing Image Brightness
 ### Histogram and Equalization
-- [ ] Computing Histogram of an Image
+- [x] Computing Histogram of an Image
 - [ ] Equalizing an Image Histogram
 ### Geomatric Operations
 - [ ] Rotating Images
