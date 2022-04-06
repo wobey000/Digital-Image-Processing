@@ -16,7 +16,7 @@ Test
 - [x] Computing Histogram of an Image (Testing)
 - [x] Equalizing an Image Histogram (Testing)
 ### Geomatric Operations
-- [ ] Rotating Images (skipped becuase it's not interesting. Just look at the affine transformation matrix I guess)
+- [ ] Rotating Images ( skipped becuase it's not interesting. Just look at the affine transformation matrix I guess)
 ### Gray Level Transformation
 - [ ] Negative Transformation
 ### Image Enhancement Techniques
