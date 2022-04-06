@@ -17,8 +17,18 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 - [x] ImageReader and ImageWritter Functions 
 - [x] Image Processing Library Creation
 ### Arithmetic Operations
+- [x] Original Image
+
+![](images/man.bmp)
+
 - [x] Increasing Image Brightness
+
+![](images/man_BrightUp.bmp)
+
 - [x] Reducing Image Brightness
+
+![](images/man_BrightDown.bmp)
+
 ### Histogram and Equalization
 - [x] Computing Histogram of an Image (Testing)
 - [x] Equalizing an Image Histogram (Testing)
