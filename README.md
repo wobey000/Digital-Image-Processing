@@ -1,10 +1,14 @@
 Image Processing Library created in C++
 
-Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™  
+Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™   
 
-Test 
+## Things I've learned so far: 
+ - Operations are done on each pixel but we might take into account the neighborhood for certain operations 
+ - BMP image range is from 0-255 We can normalize if need be by the normalization equation or just make a hard max and min 
+ - Operations like translation, rotation, reflection, scale, etc. are special cases of the affine transformation matrix
 
 ## Task List 
+   
 ### Basic Setup/Stuff
 - [x] Open and Copy Image 
 - [x] ImageReader and ImageWritter Functions 
@@ -16,7 +20,7 @@ Test
 - [x] Computing Histogram of an Image (Testing)
 - [x] Equalizing an Image Histogram (Testing)
 ### Geomatric Operations
-- [ ] Rotating Images ( skipped becuase it's not interesting. Just look at the affine transformation matrix I guess)
+- [ ] Rotating Images ( skipped but might come back to it)
 ### Gray Level Transformation
 - [ ] Negative Transformation
 ### Image Enhancement Techniques
