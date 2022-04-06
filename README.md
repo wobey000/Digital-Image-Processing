@@ -13,6 +13,7 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 ## Task List 
    
 ### Basic Setup/Stuff
+- [ ] REDO ENTIRE PROJECT USING MODERN C++ (std::array, rule of 5, various optimizations, and a few other things) 
 - [x] Open and Copy Image 
 - [x] ImageReader and ImageWritter Functions 
 - [x] Image Processing Library Creation
