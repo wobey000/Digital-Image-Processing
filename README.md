@@ -30,8 +30,8 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 ![](images/man_BrightDown.bmp)
 
 ### Histogram and Equalization
-- [x] Computing Histogram of an Image (Testing)
-- [x] Equalizing an Image Histogram (Testing)
+- [x] Computing Histogram of an Image (Testing, need to download GNU Plot for this)
+- [x] Equalizing an Image Histogram (Testing in general)
 ### Geomatric Operations
 - [ ] Rotating Images ( skipped but might come back to it)
 ### Gray Level Transformation
