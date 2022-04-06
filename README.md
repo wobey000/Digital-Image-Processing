@@ -21,11 +21,11 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 
 ![](images/man.bmp)
 
-- [x] Increasing Image Brightness
+- [x] Increasing Image Brightness (factor of 100)
 
 ![](images/man_BrightUp.bmp)
 
-- [x] Reducing Image Brightness
+- [x] Reducing Image Brightness (factor of 100)
 
 ![](images/man_BrightDown.bmp)
 
