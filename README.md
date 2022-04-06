@@ -13,8 +13,8 @@ Test
 - [x] Increasing Image Brightness
 - [x] Reducing Image Brightness
 ### Histogram and Equalization
-- [x] Computing Histogram of an Image
-- [ ] Equalizing an Image Histogram
+- [x] Computing Histogram of an Image (Testing)
+- [x] Equalizing an Image Histogram (Testing)
 ### Geomatric Operations
 - [ ] Rotating Images
 ### Gray Level Transformation

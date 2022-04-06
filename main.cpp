@@ -16,7 +16,7 @@ int main()
     float imgHist[NO_OF_GRAYLEVELS];
 
     const char imgName[] = "images/man.bmp"; 
-    const char newImgName[] = /*"images/man_copy.bmp"*/ "images/blank.bmp"; // blank image since we're only looking at the .txt 
+    const char newImgName[] = "images/man_eq.bmp" /*"images/blank.bmp"*/ ; // blank image since we're only looking at the .txt 
 
     ImageProcessing* myImage = new ImageProcessing(imgName, newImgName, &imgHeight, &imgWidth, &imgBitDepth, &imgHeader[0], &imgColorTable[0], &imgInBuffer[0], &imgOutBuffer[0]);
     myImage->readImage();
@@ -24,7 +24,9 @@ int main()
     //myImage->BrightnessUp(imgInBuffer, imgOutBuffer, _512by512_IMG_SIZE, 100);
     //myImage->BrightnessDown(imgInBuffer, imgOutBuffer, _512by512_IMG_SIZE, 200);
     //myImage->writeImage(); 
-    myImage->ComputeHistogram(imgInBuffer, imgHeight, imgWidth, imgHist);
+    //myImage->ComputeHistogram(imgInBuffer, imgHeight, imgWidth, imgHist);
+    myImage->equalizeHistogram(imgInBuffer, imgOutBuffer, imgHeight, imgWidth);
+    myImage->writeImage();  
 
     std::cout << "Good Job buddy :) " << std::endl; 
     std::cout << "Image Height: " << imgHeight << std::endl; 
