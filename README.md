@@ -6,6 +6,9 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
  - Operations are done on each pixel but we might take into account the neighborhood for certain operations 
  - BMP image range is from 0-255 We can normalize if need be by the normalization equation or just make a hard max and min 
  - Operations like translation, rotation, reflection, scale, etc. are special cases of the affine transformation matrix
+ - Linear Filtering uses a mask and slides the kernal over the image (hopefully I'm saying that right)
+ - Linear Spacial Filtering is basically convolution 
+ - Linear Filtering Steps: Define filter kernel -> Slide kernel over image -> Multiply pixels under the kernel by weights -> Copy resulting value to same location in new image
 
 ## Task List 
    
@@ -22,7 +25,7 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 ### Geomatric Operations
 - [ ] Rotating Images ( skipped but might come back to it)
 ### Gray Level Transformation
-- [ ] Negative Transformation
+- [ ] Negative Transformation ( skipped but might come back to it)
 ### Image Enhancement Techniques
 - [ ] Bluring an Image with a Filter Kernel
 - [ ] Creating a Sepia Filter
