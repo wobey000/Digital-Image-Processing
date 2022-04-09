@@ -10,6 +10,31 @@ static const int WHITE = MAX_COLOR;
 static const int BLACK = MIN_COLOR; 
 static const int NO_OF_GRAYLEVELS = 255;
 
+// Mask for detecting vertical lines (you know because numbers are the same vetically)
+static const int LINE_DETECTOR_HOR_MSK[3][3] = { {-1, 2, -1},
+                                                 {-1, 2, -1},
+                                                 {-1, 2, -1}
+                                               };
+
+// Mask for detecting horizontal lines (you know because numbers are the same horizontally)
+static const int LINE_DETECTOR_VER_MSK[3][3] = { {-1, -1, -1},
+                                                 {2, 2, 2},
+                                                 {-1, -1, -1}
+                                               };
+
+// Mask for detecting left diagonal
+static const int LINE_DETECTOR_LDIA_MSK[3][3] = { {2, -1, -1},
+                                                  {-1, 2, -1},
+                                                  {-1, -1, 2}
+                                               };
+
+// Mask for detecting right diagonal
+static const int LINE_DETECTOR_RDIA_MSK[3][3] = { {-1, -1, 2},
+                                                  {-1, 2, -1},
+                                                  {2, -1, -1}
+                                               };
+
+
 class ImageProcessing
 {
     public:
@@ -25,6 +50,8 @@ class ImageProcessing
     void ComputeHistogram(unsigned char* _imgData, int imgRows, int imgCols, float hist[]);
     void ComputeHistogram2(unsigned char* _imgData, int imgRows, int imgCols, float hist[], const char* histFile );
     void equalizeHistogram(unsigned char* _inputImgData, unsigned char* _outputImgData, int imgRows, int imgCols);
+    void detectLine(unsigned char* _inputImgData, unsigned char* _outputImgData, int imgCols, int imgRows, const int MASK[][3]);
+
 
 
 

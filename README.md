@@ -41,7 +41,24 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 - [ ] Bluring an Image with a Filter Kernel
 - [ ] Creating a Sepia Filter
 ### Edge Detection
-- [ ] Detecting Lines with a Line Detector Mask
+- [x] Detecting Lines with a Line Detector Mask
+
+- Horizontal Line Detection
+
+![](images/man_LD_Hor.bmp)
+
+- Vertical Line Detection
+
+![](images/man_LD_Ver.bmp)
+
+- Left Diagonal Line Detection
+
+![](images/man_LD_LDIR.bmp)
+
+- Right Diagonal Line Detection
+
+![](images/man_LD_RDIR.bmp)
+
 - [ ] Detecting Edges with the Prewitt Mask
 - [ ] Detecting Edges with the Sobel Mask
 - [ ] Detecting Edges with the Robinson Mask

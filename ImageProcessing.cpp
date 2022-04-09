@@ -211,3 +211,33 @@ void ImageProcessing:: equalizeHistogram(unsigned char* _inputImgData, unsigned 
 
     ComputeHistogram2(&_outputImgData[0], imgRows, imgCols, &hist[0], finalHist);
 }
+
+void ImageProcessing:: detectLine(unsigned char* _inputImgData, unsigned char* _outputImgData, int imgCols, int imgRows, const int MASK[][3])
+{
+    int x, y, i, j, sum;
+
+    for(y = 1; y <= imgRows-1; y++)
+    {
+        for(x = 1; x <= imgCols; x++)
+        {
+            sum = 0; // accumulator 
+            for(i = -1; i <= 1; i++)
+            {
+                // actual computation (convolution step)
+                for(j = -1; j <= 1; j++)
+                {
+                    sum = sum  + *(_inputImgData + x + i + (long)(y+j) * imgCols) * MASK[i+1][j+1];
+                }
+            }
+            if(sum > 255) // truncation becuase our pixel values can only go from 0-255
+            {
+                sum = 255;
+            }
+            if( sum < 0)
+            {
+                sum = 0; 
+            }
+            *(_outputImgData + x + (long)y*imgCols) = sum; 
+        }
+    }
+}
