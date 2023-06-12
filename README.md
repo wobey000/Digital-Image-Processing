@@ -13,9 +13,14 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 ## Task List 
    
 ### Basic Setup/Stuff
-- [ ] REDO ENTIRE PROJECT USING MODERN C++ (std::array, rule of 5, various optimizations, and a few other things) 
+- [ ] REDO ENTIRE PROJECT USING MODERN C++ (c++17, std::array, rule of 5?, various optimizations, and a few other things) 
 - [x] Open and Copy Image 
-- [x] ImageReader and ImageWritter Functions 
+- [ ] Use CMake for build system
+- [ ] Port to GPU (Cuda)
+- [x] ImageReader and ImageWritter Functions
+- [ ] Make a common and GPU Directory
+- [ ] Support Other Image format besides BMP (JPEG, PNG, etc)
+- [ ] Make everything work for videos (I guess i'll have to change this to general processing)
 - [x] Image Processing Library Creation
 ### Arithmetic Operations
 - [x] Original Image
