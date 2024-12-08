@@ -1,4 +1,4 @@
-Image Processing Library created in C++
+# Digital-Image-Processing-Cpp
 
 Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™   
 
@@ -6,7 +6,7 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
  - Operations are done on each pixel but we might take into account the neighborhood for certain operations 
  - BMP image range is from 0-255 We can normalize if need be by the normalization equation or just make a hard max and min 
  - Operations like translation, rotation, reflection, scale, etc. are special cases of the affine transformation matrix
- - Linear Filtering uses a mask and slides the kernal over the image (hopefully I'm saying that right)
+ - Linear Filtering uses a mask and slides the kernal over the image
  - Linear Spacial Filtering is basically convolution 
  - Linear Filtering Steps: Define filter kernel -> Slide kernel over image -> Multiply pixels under the kernel by weights -> Copy resulting value to same location in new image
 
