@@ -13,7 +13,7 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 ## Task List 
    
 ### Basic Setup/Stuff
-- [ ] REDO ENTIRE PROJECT USING MODERN C++ (c++17, std::array, rule of 5?, various optimizations, and a few other things) 
+- [ ] Improve code to more modern C++ standard 
 - [x] Open and Copy Image 
 - [ ] Use CMake for build system
 - [ ] Port to GPU (Cuda)
@@ -36,8 +36,8 @@ Reference: Udemy: Practical Image Processing in C/C ++ From Ground Up™
 ![](images/man_BrightDown.bmp)
 
 ### Histogram and Equalization
-- [x] Computing Histogram of an Image (Testing, need to download GNU Plot for this)
-- [x] Equalizing an Image Histogram (Testing in general)
+- [ ] Computing Histogram of an Image (Testing, need to download GNU Plot for this)
+- [ ] Equalizing an Image Histogram (Testing in general)
 ### Geomatric Operations
 - [ ] Rotating Images ( skipped but might come back to it)
 ### Gray Level Transformation
